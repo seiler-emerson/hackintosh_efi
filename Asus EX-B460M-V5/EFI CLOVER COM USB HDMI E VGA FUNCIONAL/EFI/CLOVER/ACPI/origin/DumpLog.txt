@@ -1,0 +1,91 @@
+8:098  2:684  Found BIOS RSDP at f0010
+8:098  0:000  Printing ACPI tables from RSDP f0010 ...
+8:098  0:000   f0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+8:098  0:000    (Xsdt: 88ee0728, Rsdt: 88ee0394)
+8:098  0:000    88ee0728: 'XSDT', 'A M I', Rev: 1, Len: 172
+8:098  0:000    88ee0394: 'RSDT', 'A M I', Rev: 1, Len: 104
+8:098  0:000    Tables in Xsdt: 17
+8:098  0:000    0. 88edb000: 'FACP', 'A M I', Rev: 6, Len: 276
+8:098  0:000        (Dsdt: 88EA2000, Facs: 893A2000, XDsdt: 88ea2000, XFacs: 0)
+8:098  0:000        88ea2000: 'DSDT', 'A M I', Rev: 2, Len: 233160
+8:102  0:004        893a2000: 'FACS', Ver: 2, Len: 64
+8:102  0:000    1. 88edf000: 'MCFG', 'A M I', Rev: 1, Len: 60
+8:102  0:000    2. 88edc000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 8365
+8:102  0:000    3. 88ea1000: 'FIDT', 'A M I', Rev: 1, Len: 156
+8:102  0:000    4. 88e89000: 'FPDT', 'A M I', Rev: 1, Len: 68
+8:102  0:000    5. 88e9c000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12461
+8:102  0:000    6. 88e9b000: 'HPET', 'A M I', Rev: 1, Len: 56
+8:102  0:000    7. 88e99000: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 5243
+8:102  0:000    8. 88e95000: 'SSDT', 'xh_cmvd4', Rev: 2, Len: 14142
+8:102  0:000    9. 88e94000: 'NHLT', 'A M I', Rev: 0, Len: 45
+8:102  0:000    10. 88e92000: 'LPIT', 'A M I', Rev: 1, Len: 148
+8:102  0:000    11. 88e91000: 'WSMT', 'A M I', Rev: 1, Len: 40
+8:102  0:000    12. 88e8e000: 'SSDT', 'PtidDevc', Rev: 2, Len: 10016
+8:102  0:000    13. 88e8d000: 'DBGP', 'A M I', Rev: 1, Len: 52
+8:102  0:000    14. 88e8c000: 'DBG2', 'A M I', Rev: 0, Len: 84
+8:102  0:000    15. 88e8b000: 'BGRT', 'A M I', Rev: 1, Len: 56
+8:102  0:000    16. 88e8a000: 'APIC', 'A M I', Rev: 4, Len: 244
+8:102  0:000  Found UEFI Acpi 2.0 RSDP at 88ee1014
+8:102  0:000  Saving ACPI tables from RSDP 88ee1014 to ACPI\origin ...
+8:102  0:000   88ee1014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+8:126  0:023    (Xsdt: 88ee0728, Rsdt: 88ee0394)
+8:126  0:000    88ee0728: 'XSDT', 'A M I', Rev: 1, Len: 172 -> XSDT.aml
+8:142  0:016    88ee0394: 'RSDT', 'A M I', Rev: 1, Len: 104 -> RSDT.aml
+8:161  0:019    Tables in Xsdt: 17
+8:161  0:000    0. 88edb000: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+8:178  0:016        (Dsdt: 88EA2000, Facs: 893A2000, XDsdt: 88ea2000, XFacs: 0)
+8:178  0:000        88ea2000: 'DSDT', 'A M I', Rev: 2, Len: 233160 -> DSDT.aml
+8:202  0:024        893a2000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+8:220  0:017    1. 88edf000: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+8:237  0:017    2. 88edc000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 8365 -> SSDT-0-CpuSsdt.aml (Found hidden SSDT 9 pcs)
+8:256  0:018        * 2296050328: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1508  53 53 44 54 E4 05 00 00 02 2F 50 6D 52 65 66 00 Internal length = 1508 -> SSDT-x0_0-Cpu0Ist.aml
+8:274  0:018        * 2295816216: 'SSDT', 'ApIst', Rev: 2, Len: 1912  53 53 44 54 78 07 00 00 02 6A 50 6D 52 65 66 00 Internal length = 1912 -> SSDT-x0_1-ApIst.aml
+8:292  0:018        * 2295808024: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1024  53 53 44 54 00 04 00 00 02 D9 50 6D 52 65 66 00 Internal length = 1024 -> SSDT-x0_2-Cpu0Cst.aml
+8:309  0:017        * 2295818904: 'SSDT', 'ApCst', Rev: 2, Len: 970  53 53 44 54 CA 03 00 00 02 A6 50 6D 52 65 66 00 Internal length = 970 -> SSDT-x0_3-ApCst.aml
+8:328  0:018        * 2296052376: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 364  53 53 44 54 6C 01 00 00 02 83 50 6D 52 65 66 00 Internal length = 364 -> SSDT-x0_4-Cpu0Hwp.aml
+8:345  0:017        * 2295809688: 'SSDT', 'ApHwp', Rev: 2, Len: 983  53 53 44 54 D7 03 00 00 02 28 50 6D 52 65 66 00 Internal length = 983 -> SSDT-x0_5-ApHwp.aml
+8:368  0:022        * 2295820312: 'SSDT', 'HwpLvt', Rev: 2, Len: 3050  53 53 44 54 EA 0B 00 00 02 68 50 6D 52 65 66 00 Internal length = 3050 -> SSDT-x0_6-HwpLvt.aml
+8:388  0:019        * 2296051992: 'SSDT', 'Cpu0Psd', Rev: 2, Len: 252  53 53 44 54 FC 00 00 00 02 E0 50 6D 52 65 66 00 Internal length = 252 -> SSDT-x0_7-Cpu0Psd.aml
+8:407  0:019        * 2295812120: 'SSDT', 'ApPsd', Rev: 2, Len: 3362  53 53 44 54 22 0D 00 00 02 C9 50 6D 52 65 66 00 Internal length = 3362 -> SSDT-x0_8-ApPsd.aml
+8:424  0:017  
+8:424  0:000    3. 88ea1000: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+8:443  0:018    4. 88e89000: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+8:460  0:017    5. 88e9c000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12461 -> SSDT-1-SaSsdt.aml
+8:478  0:018    6. 88e9b000: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+8:495  0:017    7. 88e99000: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 5243 -> SSDT-2-Ther_Rvp.aml
+8:513  0:017    8. 88e95000: 'SSDT', 'xh_cmvd4', Rev: 2, Len: 14142 -> SSDT-3-xh_cmvd4.aml
+8:532  0:019    9. 88e94000: 'NHLT', 'A M I', Rev: 0, Len: 45 -> NHLT.aml
+8:549  0:016    10. 88e92000: 'LPIT', 'A M I', Rev: 1, Len: 148 -> LPIT.aml
+8:566  0:016    11. 88e91000: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
+8:584  0:018    12. 88e8e000: 'SSDT', 'PtidDevc', Rev: 2, Len: 10016 -> SSDT-4-PtidDevc.aml
+8:602  0:017    13. 88e8d000: 'DBGP', 'A M I', Rev: 1, Len: 52 -> DBGP.aml
+8:619  0:016    14. 88e8c000: 'DBG2', 'A M I', Rev: 0, Len: 84 -> DBG2.aml
+8:636  0:017    15. 88e8b000: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+8:653  0:016    16. 88e8a000: 'APIC', 'A M I', Rev: 4, Len: 244 -> APIC.aml
+8:670  0:017  Found UEFI Acpi 1.0 RSDP at 88ee1000
+8:670  0:000  Printing ACPI tables from RSDP 88ee1000 ...
+8:670  0:000   88ee1000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+8:670  0:000    (Rsdt: 88ee0000)
+8:670  0:000    88ee0000: 'RSDT', 'A M I', Rev: 1, Len: 108
+8:670  0:000    Tables in Rsdt: 18
+8:670  0:000    0. 88edb000: 'FACP', 'A M I', Rev: 6, Len: 276
+8:670  0:000        (Dsdt: 88EA2000, Facs: 893A2000, XDsdt: 88ea2000, XFacs: 0)
+8:670  0:000        88ea2000: 'DSDT', 'A M I', Rev: 2, Len: 233160
+8:675  0:004        893a2000: 'FACS', Ver: 2, Len: 64
+8:675  0:000    1. 88edf000: 'MCFG', 'A M I', Rev: 1, Len: 60
+8:675  0:000    2. 88edc000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 8365
+8:675  0:000    3. 88ea1000: 'FIDT', 'A M I', Rev: 1, Len: 156
+8:675  0:000    4. 88ea0000: 'MSDM', 'A M I', Rev: 1, Len: 85
+8:675  0:000    5. 88e9c000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12461
+8:675  0:000    6. 88e9b000: 'HPET', 'A M I', Rev: 1, Len: 56
+8:675  0:000    7. 88e99000: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 5243
+8:675  0:000    8. 88e95000: 'SSDT', 'xh_cmvd4', Rev: 2, Len: 14142
+8:675  0:000    9. 88e94000: 'NHLT', 'A M I', Rev: 0, Len: 45
+8:675  0:000    10. 88e92000: 'LPIT', 'A M I', Rev: 1, Len: 148
+8:675  0:000    11. 88e91000: 'WSMT', 'A M I', Rev: 1, Len: 40
+8:675  0:000    12. 88e8e000: 'SSDT', 'PtidDevc', Rev: 2, Len: 10016
+8:675  0:000    13. 88e8d000: 'DBGP', 'A M I', Rev: 1, Len: 52
+8:675  0:000    14. 88e8c000: 'DBG2', 'A M I', Rev: 0, Len: 84
+8:675  0:000    15. 88e8b000: 'BGRT', 'A M I', Rev: 1, Len: 56
+8:675  0:000    16. 88e8a000: 'APIC', 'A M I', Rev: 4, Len: 244
+8:675  0:000    17. 88e89000: 'FPDT', 'A M I', Rev: 1, Len: 68
